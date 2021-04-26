@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: row;
+    margin-top :5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-evenly;
+}
+body form, body div{
+    display: flex;
+    flex-direction: column;
+}
+#news{
+    width: 35%;
+}
+.post{
+    border: 1px solid silver;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Параметры тени */
+}
+
+#cat{
+    width: 200px;
+}
