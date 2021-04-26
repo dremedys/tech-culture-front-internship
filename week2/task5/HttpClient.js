@@ -36,6 +36,23 @@ class HttpClient{
             });
     }
 
+
+    async post(endpoint,body) {
+        this.last_request_url = this.BASE_URL + endpoint
+
+        return fetch(this.BASE_URL.concat(endpoint),body)
+            .then(response => {
+                this.last_response_status_code = response.status
+                if(response.ok)
+                    return response.json();
+                else
+                    this.last_error_info = response.statusText
+            })
+            .then((json) => {
+                return json;
+            });
+    }
+
     /**
      *
      * @returns field of the class last_error_info
