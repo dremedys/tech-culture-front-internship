@@ -41,7 +41,7 @@ const setResponseCat = () => {
  */
 httpClient.get('posts')
     .then(postsFromGet => {
-        posts = posts.concat(postsFromGet.slice(0,5))
+        posts = posts.concat(postsFromGet)
         render()
     })
     .finally(setResponseCat);
@@ -60,10 +60,16 @@ form.addEventListener('submit', e => {
         .then((post) => {
             console.log(post)
             posts.push(post)
-            render()
+
         })
         .catch((e) => console.log(e))
-        .finally(setResponseCat)
+        .finally( () =>  {
+            setResponseCat()
+            render()
+            document.getElementById('title').value = ''
+            document.getElementById('body').value = ''
+
+        })
 })
 
 /**
@@ -71,7 +77,7 @@ form.addEventListener('submit', e => {
  */
 const render = () => {
     posts.sort(function(a, b) {
-        return a.id - b.id;
+        return b.id - a.id;
     })
         feed.innerHTML = posts.map(createPost).join('')
 }
