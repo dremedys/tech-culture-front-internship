@@ -82,7 +82,7 @@ class HttpClient{
      *
      * @returns field of the class last_response_status_code
      */
-    get_Last_response_statusCode(){
+    get_last_response_status_code(){
         return this.last_response_status_code
     }
 

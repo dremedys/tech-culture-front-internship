@@ -24,15 +24,14 @@ const createPost = post =>
 
 /**
  * updating Response statuses after request
- * @return nothing
  * @description changes fields of httpClient instance after making GET and POST
  */
 const setResponseCat = () => {
     lastRequest.innerText = `Last requested url: 
-                                ${httpClient.last_request_url}`
-    statusCode.innerText = 'Status code: ' + httpClient.last_response_status_code
+                                ${httpClient.get_last_request_url()}`
+    statusCode.innerText = 'Status code: ' + httpClient.get_last_response_status_code()
     catImg.src = 'https://ak.picdn.net/shutterstock/videos/1052490562/thumb/9.jpg?ip=x480'
-    setTimeout(() => catImg.src = 'https://http.cat/' + httpClient.last_response_status_code,
+    setTimeout(() => catImg.src = 'https://http.cat/' + httpClient.get_last_response_status_code(),
         800)
 
 }
@@ -48,16 +47,15 @@ httpClient.get('posts')
     .finally(setResponseCat);
 
 /**
- * sending data to the server
+ * @description when user click button, data will be send to server and post added to the feed
  */
 form.addEventListener('submit', e => {
     e.preventDefault()
-
-    // getting key and values from the form
-    const formData = new FormData(form);
     const title = document.getElementById('title').value
     const body = document.getElementById('body').value
-
+    /**
+     * @description instance of httpClient send POST requests with body to server
+     */
     httpClient.post('posts', {title,body})
         .then((post) => {
             console.log(post)
@@ -68,6 +66,9 @@ form.addEventListener('submit', e => {
         .finally(setResponseCat)
 })
 
+/**
+ * function which renders FEED
+ */
 const render = () => {
     posts.sort(function(a, b) {
         return a.id - b.id;
