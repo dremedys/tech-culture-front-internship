@@ -7,10 +7,18 @@ class HttpClient{
      * @type string
      */
     BASE_URL
+    /**
+     * @type string
+     * @description last url
+     */
     last_request_url
     last_response_status_code
     last_error_info
 
+    /**
+     *
+     * @param BASE_URL string
+     */
     constructor(BASE_URL) {
         this.BASE_URL = BASE_URL
     }
@@ -35,13 +43,20 @@ class HttpClient{
                 return json;
             });
     }
-
-
-    async post(endpoint,body) {
-        this.last_request_url = this.BASE_URL + endpoint
-
-        return fetch(this.BASE_URL.concat(endpoint),body)
-            .then(response => {
+    /**
+     * @description method to make GET request to the server with endpoint
+     * @param endpoint point which was added to main url to make POST
+     * @returns {Promise<Response>}
+     */
+    async post(endpoint, data = {}) {
+        return  await fetch(this.BASE_URL+endpoint, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then(
+            response => {
                 this.last_response_status_code = response.status
                 if(response.ok)
                     return response.json();
@@ -50,14 +65,16 @@ class HttpClient{
             })
             .then((json) => {
                 return json;
-            });
+            }
+        ).catch((e)=> console.log('error'));
+
     }
 
     /**
      *
      * @returns field of the class last_error_info
      */
-    getLastErrorInfo(){
+    get_last_error_info(){
         return this.last_error_info
     }
 
@@ -65,7 +82,7 @@ class HttpClient{
      *
      * @returns field of the class last_response_status_code
      */
-    getLastResponseStatusCode(){
+    get_Last_response_statusCode(){
         return this.last_response_status_code
     }
 
@@ -73,7 +90,7 @@ class HttpClient{
      *
      * @returns field of the class last_request_url
      */
-    getLastRequestUrl(){
+    get_last_request_url(){
         return this.last_request_url
     }
 }

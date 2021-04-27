@@ -9,14 +9,11 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<h3>Create a post</h3>
 <form>
-    <h3>Create a post</h3>
-    <form action="#">
-        <input name="title" placeholder="Post title">
-        <textarea name="body" placeholder="Post content"></textarea>
+        <input id="title" name="title" placeholder="Post title">
+        <textarea  id="body" name="body" placeholder="Post content"></textarea>
         <button name="submit" type="submit">Add</button>
-    </form>
-
 </form>
 <div id="news">
     <h4>Feed</h4>
@@ -25,9 +22,9 @@
     </div>
 </div>
 <div id="logs">
-    <h4 id="last-request">Last request: </h4>
-    <h5 id="status-code">Status code</h5>
-    <img id="cat"></img>
+    <h4 id="last-request"></h4>
+    <h5 id="status-code"></h5>
+    <img id="cat">
 </div>
 <script src="HttpClient.js"></script>
 <script src="index.js"></script>
