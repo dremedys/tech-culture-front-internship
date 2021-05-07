@@ -1,0 +1,50 @@
+body {
+  margin: 100px 0 0;
+  background-color: whitesmoke;
+  font-family:"Open Sans";
+  display: flex;
+  justify-content: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.silver {
+  color: silver;
+}
+.bolder {
+  font-weight: 700;
+}
+.blue {
+  color: rgb(33,150,243)
+}
+green-bg{
+  background-color: rgb(139,195,74);
+}
+.corral-bg {
+  background-color: #de6161;
+  color: white;
+}
+.corral {
+  color: #de6161;
+}
+
+
+
+
+
+.small{
+  font-size: 0.8rem;
+}
+
+.circle {
+  height: 9px;
+  width: 9px;
+  border:1.5px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: -30px;
+  left: -15px;
+}

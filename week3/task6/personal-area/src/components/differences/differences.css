@@ -1,0 +1,26 @@
+.diff{
+    text-align: left;
+    margin-right: 80px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.diff img{
+    width: 40px;
+    margin-right: 5px;
+}
+
+.income-block {
+    padding: 1px 4px;
+    font-size: 0.7rem;
+    font-family: "Arial";
+    border: 1px solid transparent;
+    border-radius: 6px;
+    position: relative;
+    left: 10px;
+}
+.diff-div > *{
+    margin-bottom: 7px;
+}
+

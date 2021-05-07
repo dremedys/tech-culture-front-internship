@@ -1,0 +1,13 @@
+.header-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.badge {
+    position: relative;
+    top: -11px;
+    left:5px;
+
+}
+

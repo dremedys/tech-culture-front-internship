@@ -1,0 +1,8 @@
+.additional {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.additional p {
+    margin-bottom: 1%;
+}

@@ -1,0 +1,9 @@
+.main{
+    border: 1px solid silver;
+    width: 650px;
+    border-radius: 3px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+}

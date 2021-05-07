@@ -1,0 +1,35 @@
+.nav{
+    margin-bottom: 50px;
+    padding: 0;
+}
+.nav a{
+    margin: 0;
+    width: 30px;
+    height: 100%;
+    font-size: 0.8rem;
+    border: 1px solid silver;
+    border-left:none;
+    padding: 5px 8px;
+}
+a:first-child{
+    border:none;
+    border: 1px solid silver;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+a:last-child{
+    border:none;
+    border-right: 1px solid silver;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.selected {
+    background-color: rgb(33,150,243);
+    color: white;
+}
+.nav a:hover{
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
