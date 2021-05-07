@@ -13,12 +13,11 @@ const divideDigits = (number) => {
     let res = ''
     let left = number.length
     while(left >= 3){
-        res += number[left - 1] + number[left - 2] + number[left - 3] + ' '
+        res += number.substring(left-1, left-4) + ' '
         left -= 3
     }
-    while(left !== 0){
-        res += number[left-1]
-        left--
+    while(left > 0){
+        res += number[--left]
     }
     return res.split("").reverse().join("");
 }

@@ -1,0 +1,43 @@
+.error-block {
+    margin-bottom: 20px;
+}
+.error-bar {
+    width: 100%;
+    height: 5px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.error-bar span {
+    margin-right:1px;
+}
+.error-bar span:first-child{
+    border: 1px solid transparent;
+    border-top-left-radius: 1.5px;
+    border-bottom-left-radius: 1.5px;
+}
+.error-bar span:last-child{
+    border:none;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 1.5px;
+    border-bottom-right-radius: 1.5px;
+}
+.detailed-block {
+    display: flex;
+}
+.detailed{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.detailed span {
+    display: block;
+
+}
+.rectangle {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin-right: 4px;
+}

@@ -12,7 +12,7 @@ export default class HeaderInfo extends Component{
                     vertical: "top",
                     horizontal: 'left',
                 }}>
-                    <div className={'badge'}>{capitalizedKey}: {data[key].toFixed(2)}%</div>
+                    <div className={'badge bolder'}>{capitalizedKey}: {data[key].toFixed(2)}%</div>
                 </Badge>
             )
         });

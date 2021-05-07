@@ -7,3 +7,9 @@
     padding-right: 50px;
     background-color: white;
 }
+.main-title{
+    text-align: left;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+}

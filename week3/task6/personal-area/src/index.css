@@ -29,8 +29,18 @@ green-bg{
 .corral {
   color: #de6161;
 }
-
-
+.yellow-bg {
+  background-color: rgb(255,204,2);
+}
+.violet-bg {
+  background-color: rgb(88,86,213)
+}
+.silver-bg {
+  background-color: silver;
+}
+.blue-bg {
+  background-color: rgb(33,150,243)
+}
 
 
 

@@ -18,6 +18,7 @@ export default class Transformer{
         const res = await this.httpClient.getErrors(chosen)
         if(res === null)
             throw new Error()
+        return res
     }
 }
 
