@@ -9,26 +9,28 @@ const actives = {
 export default class Navigation extends Component{
     render() {
         const buttons = Object.entries(actives).map(button => {
-            let classNames = ''
-            if(button[0] === this.props.colored){
-                classNames += ' selected'
+            const keyName = button[0],
+                valueName = button[1]
+            let classNames = 'navigation__item'
+
+            if(keyName === this.props.colored){
+                classNames += ' navigation__item--selected'
             }
             return (
                 <a
                     className={classNames}
-                    key={button[0]}
-                    onClick={()=> { this.props.handleChosen(button[0])}}  // Getting a key of object which is good for code
+                    key={keyName}
+                    onClick={()=> { this.props.handleChosen(keyName)}}
                 >
-                    {button[1]}
-                </a > // Getting a value of object which is good title
+                    {valueName}
+                </a >
 
             )
         })
         return (
-            <div className={'nav'}>
+            <div className={'navigation'}>
                 {buttons}
             </div>
-
         )
     }
 }

@@ -21,4 +21,11 @@ const divideDigits = (number) => {
     }
     return res.split("").reverse().join("");
 }
-export {difference, divideDigits}
+const sum = (arr, key)  => {
+    let sum = 0;
+    for(let el of arr){
+        sum += el[key]
+    }
+    return sum
+}
+export {difference, divideDigits,sum}

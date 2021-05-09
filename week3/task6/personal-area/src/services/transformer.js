@@ -7,10 +7,10 @@ export default class Transformer{
         const fields = [ 'timeout', 'zeroes', 'avg_price','str','errors','ctr','searches_current','bookings_current',
             'searches_previous','bookings_previous','clicks_previous','clicks_current']
         for(let field of fields) {
-            const date = await this.httpClient.getData(field,chosen)
-            if(date === null)
-                throw new Error()
-            data[field] = date
+            const res = await this.httpClient.getData(field,chosen)
+            if(res === null)
+                throw new Error('Data was not provided')
+            data[field] = res
         }
         return data;
     }

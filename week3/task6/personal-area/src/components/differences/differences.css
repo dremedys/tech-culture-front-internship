@@ -1,4 +1,4 @@
-.diff{
+.differences{
     text-align: left;
     margin-right: 80px;
     width: 250px;
@@ -6,21 +6,43 @@
     flex-direction: row;
     align-items: flex-start;
 }
-.diff img{
+.differences__icon img{
     width: 40px;
     margin-right: 5px;
 }
+.differences__icon{
+   position: relative;
+}
+.differences__icon:not(:last-child):after{
+    position: absolute;
+    background: url('../../assets/images/arrow.png') no-repeat ;
+    background-size: 21px 64px;
+    display: inline-block;
+    width: 33px;
+    height: 66px;
+    content:"";
+    top:37.5px;
+    left:9.7px;
+}
 
-.income-block {
+.differences__circle-wrapper{
+    position: absolute;
+    top: -8px;
+    left:27px;
+}
+
+.differences__income-block {
     padding: 1px 4px;
     font-size: 0.7rem;
     font-family: "Arial";
     border: 1px solid transparent;
-    border-radius: 6px;
+    border-radius: 6.5px;
+    transform: scale(10, 0.5);
     position: relative;
     left: 10px;
+    top: -2px;
 }
-.diff-div > *{
+.differences__main > *{
     margin-bottom: 7px;
 }
 

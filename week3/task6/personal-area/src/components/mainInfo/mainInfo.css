@@ -1,7 +1,6 @@
 .main-info{
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     align-items: stretch;
 }

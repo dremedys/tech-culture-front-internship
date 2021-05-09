@@ -4,10 +4,9 @@
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.badge {
-    position: relative;
-    top: -11px;
-    left:5px;
-
+.header-info__item{
+    display: flex;
 }
-
+.header-info__circle-wrapper{
+    margin-right: 3px;
+}

@@ -76,7 +76,9 @@ export default class DataPage extends Component{
                     <HeaderInfo data={headerData}></HeaderInfo>
                     <ErrorBlock data={errors}></ErrorBlock>
                     <MainInfo data={searchData}/>
+                    <hr></hr>
                     <MainInfo data={clickData}/>
+                    <hr></hr>
                     <MainInfo data={bookingData}/>
                 </div>
             )

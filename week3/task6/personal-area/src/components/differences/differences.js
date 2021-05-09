@@ -4,17 +4,19 @@ import {difference, divideDigits} from "../../services/compute";
 
 export default class Differences extends Component{
     render() {
-        const data = this.props.data
-        const img = data.img
-        const income = difference(data.prev,data.cur)
-        let incomeClasses = 'income-block',
+        const data = this.props.data,
+            img = data.img,
+            income = difference(data.prev,data.cur)
+
+        let incomeClasses = 'differences__income-block',
             labelClasses = 'label bolder',
             circleClasses = 'circle',
             incomeTxt,
             prev = divideDigits(data.prev),
             cur = divideDigits(data.cur)
+
         if(income){
-            incomeTxt = income.toFixed(2)
+            incomeTxt = Math.round(income)
         }
         if(income > 0) {
             incomeClasses += ' green-bg'
@@ -27,12 +29,14 @@ export default class Differences extends Component{
         }
 
         return (
-            <div className={'diff'}>
-                <div>
-                    <img src={img} alt={'some'}/>
-                    <span className={circleClasses}></span>
+            <div className={'differences'}>
+                <div className={'differences__icon'}>
+                    <img src={img} alt={'difference icon'}/>
+                    <div className={'differences__circle-wrapper'}>
+                        <span className={circleClasses}></span>
+                    </div>
                 </div>
-                <div className={'diff-div'}>
+                <div className={'differences__main'}>
                     <div>
                         <span className={labelClasses}>{data.label}</span>
                         <span className={incomeClasses}>{incomeTxt}%</span>
@@ -40,7 +44,6 @@ export default class Differences extends Component{
                     <p>{cur}</p>
                     <p className={'silver'}>{prev}</p>
                 </div>
-
             </div>
         )
     }

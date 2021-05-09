@@ -1,9 +1,9 @@
-.nav{
+.navigation{
     margin-bottom: 40px;
     padding: 0;
     text-align: left;
 }
-.nav a{
+.navigation__item{
     margin: 0;
     width: 30px;
     height: 100%;
@@ -12,13 +12,13 @@
     border-left:none;
     padding: 5px 8px;
 }
-a:first-child{
+.navigation__item:first-child{
     border:none;
     border: 1px solid silver;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
-a:last-child{
+.navigation__item:last-child{
     border:none;
     border-right: 1px solid silver;
     border-top: 1px solid silver;
@@ -26,11 +26,11 @@ a:last-child{
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
-.selected {
+.navigation__item--selected {
     background-color: rgb(33,150,243);
     color: white;
 }
-.nav a:hover{
+.navigation__item:hover{
     cursor: pointer;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
