@@ -8,6 +8,7 @@ const difference = (prev, cur) => {
 
     return null
 }
+// example: divideDigits(12345678) = 12 345 678
 const divideDigits = (number) => {
     number = number.toString()
     let res = ''
