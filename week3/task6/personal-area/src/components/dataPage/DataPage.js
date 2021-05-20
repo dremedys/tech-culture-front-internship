@@ -9,8 +9,11 @@ import bookImg from '../../../src/assets/images/3.png'
 import ErrorBlock from "../errorsBar/errorBar";
 
 export default class DataPage extends Component{
-    state = {data: {}, errors:[], loading:true, invalidRequest: false}
+    state = {data: {},
+        errors:[],
+        loading:true, invalidRequest: false}
     transformer = new Transformer()
+
     setInvalidRequest = (invalidRequest) =>{
         this.setState({invalidRequest})
     }
