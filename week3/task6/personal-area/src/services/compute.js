@@ -3,7 +3,7 @@ const difference = (prev, cur) => {
         return - (100*(prev-cur))/cur
     }
     else if(prev < cur){
-        return  (100*(prev-cur))/prev
+        return  (100*(cur-prev))/prev
     }
 
     return null

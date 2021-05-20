@@ -18,9 +18,11 @@ export default class Differences extends Component{
         if(income){
             incomeTxt = Math.round(income)
         }
+
         if(income > 0) {
             incomeClasses += ' green-bg'
             circleClasses += ' green-bg'
+            incomeTxt =  '+' + incomeTxt
         }
         else {
             incomeClasses += ' corral-bg'
@@ -37,9 +39,9 @@ export default class Differences extends Component{
                     </div>
                 </div>
                 <div className={'differences__main'}>
-                    <div>
+                    <div className={'differences__main__left'}>
                         <span className={labelClasses}>{data.label}</span>
-                        <span className={incomeClasses}>{incomeTxt}%</span>
+                        <div className={incomeClasses}>{incomeTxt}%</div>
                     </div>
                     <p>{cur}</p>
                     <p className={'silver'}>{prev}</p>

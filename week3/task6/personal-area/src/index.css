@@ -19,7 +19,9 @@ body {
   color: rgb(33,150,243)
 }
 .green-bg{
-  background-color: rgb(139,195,74);
+  background-color: #8BC34A;
+  color: white;
+
 }
 .corral-bg {
   background-color: #de6161;
