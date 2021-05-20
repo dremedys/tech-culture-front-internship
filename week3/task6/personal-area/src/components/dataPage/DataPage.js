@@ -58,7 +58,7 @@ export default class DataPage extends Component{
             let {data,errors} = this.state
             const headerData = {errors: data.errors, zeroes: data.zeroes,timeout:data.timeout}
             const searchData = {
-                differences: { img: searchImg,  label:'Searches', prev: data.searches_previous, cur: data.searches_current,
+                differences: { img: searchImg,  label:'Searches', prev: data?.searches_previous, cur: data?.searches_current,
                 },
                 additional: { percents: [ {label:'Mobile traffic',content:100}, {label: 'Web traffic',content: 100}],
                     text: 'You get 100% traffic on mobile and desktop devices.', helps:['Searches','Pessimisation']}
@@ -76,12 +76,12 @@ export default class DataPage extends Component{
             }
             return (
                 <div className={'data-page'}>
-                    <HeaderInfo data={headerData}></HeaderInfo>
-                    <ErrorBlock data={errors}></ErrorBlock>
+                    <HeaderInfo data={headerData}/>
+                    <ErrorBlock data={errors}/>
                     <MainInfo data={searchData}/>
-                    <hr></hr>
+                    <hr/>
                     <MainInfo data={clickData}/>
-                    <hr></hr>
+                    <hr/>
                     <MainInfo data={bookingData}/>
                 </div>
             )

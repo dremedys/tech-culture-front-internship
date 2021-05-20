@@ -1,0 +1,53 @@
+.Post {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+.Post .created_at {
+    font-weight: bold;
+}
+
+.comment {
+    border: 1px solid silver;
+    margin-top: 10px;
+
+}
+
+.comment header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 15px;
+    background: #F2DAC3;
+    padding: 3px;
+}
+.comment h3{
+    font-weight: bold;
+}
+.likes {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.liked-count {
+    background-color: #0061a8;
+}
+.notLiked-count {
+    background-color: gray;
+
+}
+.Post a{
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+    border: 1px solid silver;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: orange;
+    font-style: italic;
+}
+.Post a:hover {
+    box-shadow:  2px 2px 2px rgba(0, 0, 0, .5);
+}

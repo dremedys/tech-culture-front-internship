@@ -1,0 +1,55 @@
+.PostList{
+    list-style: none;
+}
+
+.PostList .post {
+    width: 70%;
+    border: 1px solid silver;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /*padding: 5px;*/
+}
+
+.PostList .post header{
+    background: #8AB6D6;
+    padding: 7px;
+}
+
+.PostList .post h3{
+    margin: 0;
+}
+.PostList .post img{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.PostList .post .meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    font-weight:bolder;
+}
+.PostList .post p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.PostList .created_at {
+
+}
+.PostList  .commentsCountBlock{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.PostList .comments-count{
+
+}
+.PostList .post a{
+    text-decoration: none;
+    color: black;
+}

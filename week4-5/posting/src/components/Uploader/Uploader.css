@@ -1,0 +1,18 @@
+.Uploader {
+
+}
+
+ input[type="file" i] {
+    width: 300px; /*as per your wish*/
+    /*height: 100px; !*as per your wish*!*/
+    display: block;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+ .image {
+     width: 100px;
+     height: 100px;
+     background-color: red;
+     display: block;
+     border: 1px solid silver;
+ }

@@ -1,0 +1,26 @@
+.Navigation {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: #FBE0C4;
+}
+.Navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Navigation a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.Navigation .active{
+    color:white;
+    background-color: #282c34;
+    border: 1px solid transparent;
+    padding: 3px;
+    border-radius: 3px;
+}
