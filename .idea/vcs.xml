@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/final-app/final-front" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/final-app/final_back" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/final-fullstack/final_back" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/week4/posting" vcs="Git" />
   </component>
 </project>

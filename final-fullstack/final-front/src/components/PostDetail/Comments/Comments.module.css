@@ -1,0 +1,42 @@
+.Comments{
+    margin: 0 auto;
+    width: 40%;
+}
+.comment {
+    border: 1px solid silver;
+    margin-top: 10px;
+    position: relative;
+}
+
+.comment header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 15px;
+    background: #F2DAC3;
+    padding: 3px;
+}
+.comment h3{
+    font-weight: bold;
+}
+.commentContent{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+.date{
+    color: silver;
+    font-size: 0.8rem;
+}
+
+.liked-count {
+    background-color: #0061a8;
+}
+.notLiked-count {
+    background-color: gray;
+
+}
+.likeButton {
+
+}

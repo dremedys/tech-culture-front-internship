@@ -1,0 +1,43 @@
+ .post {
+    width: 70%;
+    border: 1px solid silver;
+     margin: 0 auto 20px;
+     /*padding: 5px;*/
+}
+
+ .post header{
+    background: #7f8ce3;
+    padding: 7px;
+}
+
+ .post h3{
+    margin: 0;
+}
+ .post img{
+    display: block;
+    margin: 0 auto;
+}
+
+ .post .meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    font-weight:bolder;
+}
+ .post p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ .post a{
+    text-decoration: none;
+    color: black;
+}
+.commentsCountBlock{
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: space-evenly;
+ }

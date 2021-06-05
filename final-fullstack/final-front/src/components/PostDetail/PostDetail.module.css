@@ -1,0 +1,16 @@
+.PostDetail {
+    margin-top: 30px;
+}
+.postWrapper {
+    border: 1px solid transparent;
+    width: 50%;
+    margin: 20px auto 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.createdAt{
+    color: silver;
+    font-size: 12px;
+}
+.postImage{
+    width: 300px;
+}
