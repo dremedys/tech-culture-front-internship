@@ -1,16 +1,16 @@
 Final testing app
 Created full stack app using
 For front-end:
-React Redux, thunk,axios
+-React Redux, thunk,axios
 For back-end:
-Django,DRF
-DataBase: postgres
+-Django,DRF
+-DataBase: postgres
 
 Functionalities:
-Login/register JWT
-Create a post(with an image), view feed, view user profile
-Edit user profile,avatar
-View/leave comment to a  post, like a comment, etc.
+-Login/register JWT
+-Create a post(with an image), view feed, view user profile
+-Edit user profile,avatar
+-View/leave comment to a  post, like a comment, etc.
 
 To run the app:
 - clone the repo
