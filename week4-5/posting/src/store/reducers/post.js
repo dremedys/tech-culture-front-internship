@@ -16,7 +16,6 @@ const initialState = {
     loadingPost: false,
     loadingComments: false,
     error: null,
-
 }
 
 export default function postReducer(state=initialState, action){

@@ -27,31 +27,6 @@ const Post = () => {
     },[dispatch, id]
     )
 
-    // function renderComments(){
-    //     return comments.map((item, index) => {
-    //         return (
-    //             <div key={item.content} className={classes.comment}>
-    //                 <header>
-    //                     <span>
-    //                         Comment #{index+1}
-    //                     </span>
-    //                     <span>
-    //                         {formatFromISO(item.created_at)}
-    //                     </span>
-    //                 </header>
-    //                 <p>
-    //                     {item.content}
-    //                 </p>
-    //                 <button onClick={() => {
-    //                     dispatch(likeComment(item.id))}
-    //                 }>
-    //                     Like {item.likes}
-    //                 </button>
-    //             </div>
-    //         )
-    //     })
-    // }
-
     return (
         <div className={classes.Post}>
             <NavLink to={'/'}> {'<'} Go back </NavLink>

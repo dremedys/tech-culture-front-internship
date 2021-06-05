@@ -28,6 +28,7 @@ const Uploader = props => {
                     .child(image.name)
                     .getDownloadURL()
                     .then(urli => {
+                        console.log(urli)
                         props.setUrl(urli)
                     });
             }
@@ -37,7 +38,7 @@ const Uploader = props => {
     return (
         <div className={classes.Uploader}>
             <h3>Add image</h3>
-            <input   type='file' onChange={handle}/>
+            <input  accept={'image'} type='file' onChange={handle}/>
             <label>Please click this to add image </label>
             <Button disabled={!imageAdded} type={'image-sender'} onClick={handleUpload}>Add image</Button>
         </div>

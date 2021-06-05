@@ -54,7 +54,8 @@ const Comments = ({id}) => {
                 </div>
             </div>
         )
-    })
+    }
+    )
 }
 
 export default Comments

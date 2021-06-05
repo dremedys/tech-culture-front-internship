@@ -7,6 +7,7 @@ import CreatePost from "./containers/CreatePost/CreatePost";
 import Post from "./containers/Post/Post";
 import Navigation from "./components/Navigation/Navigation";
 class App extends Component {
+    
     render() {
         return (
             <div>
